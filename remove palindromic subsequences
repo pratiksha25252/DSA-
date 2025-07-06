@@ -1,0 +1,24 @@
+class Solution {
+public:
+bool ispalindrom(string s){
+    int st=0;
+    int end=s.length()-1;
+        while(st<end){
+         if(s[st]!=s[end]){
+            return false;
+            st++;
+            end--;
+         }
+        }
+         return true;
+}
+    
+    int removePalindromeSub(string s) {
+        if(ispalindrom(s)){
+            return 1;
+        }
+        return 2;
+
+        
+    }
+};
