@@ -1,0 +1,18 @@
+class Solution {
+public:
+    bool containsDuplicate(vector<int>& nums) {
+           int s;
+            unordered_map<int,int> freq;
+            for(int  s:nums){
+                freq[s]++;
+
+            
+    
+        if(freq[s]>1){
+            return true;
+        }
+            }
+
+    return 0;
+    }
+};
