@@ -1,0 +1,19 @@
+class Solution {
+  public:
+    int missingNumber(vector<int> &arr) {
+        // code here
+        int i;
+        for( i=1;i<=arr.size();i++){
+            int c=0;
+            for(int j=0;j<arr.size();j++){
+                if(arr[j]==i){
+                     c++;
+            }
+            
+        }
+        if(c==0)
+            return i;
+          //  break;
+        }
+    }
+};
