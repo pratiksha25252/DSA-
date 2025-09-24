@@ -1,0 +1,23 @@
+class Solution {
+  public:
+    int intersectSize(vector<int> &a, vector<int> &b) {
+        // code  here
+        int count=0;
+        unordered_map<int ,int> freqA,freqB ; 
+        for(int n: a){
+            freqA[n]++;
+            
+            
+        }
+        for(int n: b){
+            freqB[n]++;
+        }
+      for(auto &p : freqA){     
+      if (freqB.count(p.first) >= 1){  
+      
+      count++;
+        }
+      }
+        return count;
+    }
+};
